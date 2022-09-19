@@ -34,7 +34,18 @@ const media = (serie1.temporadas + serie2.temporadas + serie3.temporadas) /2
 console.log("A média de temporadas é:", media)
 
 
-console.log("As séries 1, 2 e 3 continuam sendo produzidas?", serie1.produçao && serie2.produçao && serie3.produçao)
+console.log("As séries 1, 2 e 3 continuam sendo produzidas?", serie1.producao && serie2.producao && serie3.producao)
+
+
+//----------------------------------------------
+
+const todasAsSeries = []
+
+if (serie1 !== serie2 !== serie3) {
+   todasAsSeries.push(serie1, serie2, serie3)
+    } else {
+      console.log(alert("Sua série ainda não foi adicionada"))  
+    }
 
 
 
