@@ -7,6 +7,7 @@ const serie1 = {
   temporadas: 2,
   producao: false,
   genero: ["Terror", "Drama", "Ficção Supernatural"],
+  foto: "link"
 };
 
 const serie2 = {
@@ -15,6 +16,7 @@ const serie2 = {
   temporadas: 15,
   producao: false,
   genero: ["Drama", "Policial", "Suspense", "Ação"],
+  foto: "link"
 };
 
 const serie3 = {
@@ -23,6 +25,7 @@ const serie3 = {
   temporadas: 12,
   producao: false,
   genero: ["Comédia", "Sitcom"],
+  foto: "link"
 };
 
 // console.log(serie1.nome.toUpperCase(), serie1)
