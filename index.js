@@ -56,6 +56,11 @@ console.log(todasAsSeries);
 //    console.log(todasString[i])
 // }
 
+// for (lei i in todasAsSeries){
+//   todasAsSeries[i].genero = todasAsSeries[i].genero.toString()
+// }
+
+
 function todasStrings (series){
     for (i in series){
       console.log(`${i}: ${series[i]}\n`)
@@ -80,4 +85,5 @@ function encontraSerie(array, string){
       console.log(buscaSerie);
   }
 }
-//encontraSerie(todasAsSeries, "The Big Bang Theory")
+
+encontraSerie(todasAsSeries, "The Big Bang Theory")
