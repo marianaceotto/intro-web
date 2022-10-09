@@ -40,6 +40,7 @@ const serie3 = {
 
 //----------------------------------------------
 
+
 const todasAsSeries = [];
 
 if ((serie1 !== serie2) !== serie3) {
@@ -56,7 +57,8 @@ console.log(todasAsSeries);
 //    console.log(todasString[i])
 // }
 
-// for (lei i in todasAsSeries){
+
+// for (let i in todasAsSeries){
 //   todasAsSeries[i].genero = todasAsSeries[i].genero.toString()
 // }
 
@@ -73,13 +75,13 @@ todasStrings(serie2)
 todasStrings(serie3)
 
 
-function encontraSerie(array, string){
+function encontraSerie (array, string){
   const buscaSerie = array.filter((elemento) => {
       if(elemento.nome === string){
           return elemento
    }
  })
-  if(buscaSerie.length === 0){
+   if(buscaSerie.length === 0){
       alert("Série não encontrada")
   }else{
       console.log(buscaSerie);
