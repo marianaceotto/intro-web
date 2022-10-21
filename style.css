@@ -5,25 +5,36 @@
 }
 
 .container{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 2fr 16fr 1fr;
+    /* display: grid;
+    grid-template-rows: 1fr 6fr 0.3fr; */
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
 }
 
 header{
-    padding: 30px;
-    background: no-repeat center/100% url(./assets/tela.jpg);
-    color:black;
-    font-family: 'Courier New', Courier, monospace;
-    font-size:larger;
     display: flex;
     flex-wrap: wrap;
-    justify-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 30px;
+    background: url("./assets/tela.jpg");
+    background-size: cover;
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(215, 207, 207);
+    display: block;
 }
 
 button{
-    background-color: rgb(153, 149, 149);
+    border: 1px solid rgb(153, 149, 149);
+    border-radius: 4px;
+    margin-right: 4rem;
+    box-shadow: 2px 20px 20px #000;
 }
 
 button:active{
@@ -31,55 +42,50 @@ button:active{
     color: white;
 }
 
-main{
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.896);
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-} 
-
-
-.series ul{
+ul{
     list-style: none;
+    font-size: medium;
 }
 
+main{
+    background-color: rgba(0, 0, 0, 0.896);
+    color:white;
+}
 
-.series {
+.series{
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px; 
-    justify-content: center;
-    
+    flex-wrap: wrap; 
+    align-items: baseline;
+    justify-content: center; 
+    flex: 1 1 150px;  
 }
+
 
 .series div {
-    width: 25vw;
+    margin: 10px;
     padding: 10px;
-    background-color: rgb(41, 38, 38);
-    background-size: contain;
     border: 1px solid black;
-    flex: 1 1 200px;
-    
+    background-color: rgb(41, 38, 38);
 }
 
-.series img {
-    width: 100%;
-    height: 60%;
-    object-fit: contain;
-    border-radius: 10px;
-}
 
+img{
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
 
 footer {
-    padding: 4px;
-    justify-items: auto;
+    font-size: 0.8rem;
     background-color: rgb(41, 38, 38);
-    color:rgb(116, 123, 132)
+    color:rgb(116, 123, 132);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
 }
-
-
-
-
 

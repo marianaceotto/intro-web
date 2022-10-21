@@ -7,7 +7,6 @@ const serie1 = {
   temporadas: 2,
   producao: false,
   genero: ["Terror", "Drama", "Ficção Supernatural"],
-  foto: "link"
 };
 
 const serie2 = {
@@ -16,7 +15,6 @@ const serie2 = {
   temporadas: 15,
   producao: false,
   genero: ["Drama", "Policial", "Suspense", "Ação"],
-  foto: "link"
 };
 
 const serie3 = {
@@ -25,8 +23,31 @@ const serie3 = {
   temporadas: 12,
   producao: false,
   genero: ["Comédia", "Sitcom"],
-  foto: "link"
 };
+
+const serie4 = {
+  nome: "Game Of Thrones",
+  ano: 2011,
+  temporadas: 08,
+  producao: false,
+  genero: ["Fantasia Medieval, Ação, Drama, Ficção"],
+};
+
+const serie5 = {
+  nome: "Grey's Anatomy",
+  ano: 2005,
+  temporadas: 19,
+  producao: true,
+  genero: ["Drama Médico, Romance, Comédia"],
+};
+
+// const serie6 = {
+//   nome: "Prision Break",
+//   ano: 2005,
+//   temporadas: 05,
+//   producao: false,
+//   genero: ["Ação, Drama, Suspense, Ficção Policial"],
+// };
 
 // console.log(serie1.nome.toUpperCase(), serie1)
 // console.log(serie2.nome.toUpperCase(), serie2)
@@ -73,6 +94,9 @@ function todasStrings (series){
 todasStrings(serie1)
 todasStrings(serie2)
 todasStrings(serie3)
+todasStrings(serie4)
+todasStrings(serie5)
+// todasStrings(serie6)
 
 
 function encontraSerie (array, string){
@@ -89,3 +113,13 @@ function encontraSerie (array, string){
 }
 
 encontraSerie(todasAsSeries, "The Big Bang Theory")
+
+//----------------------------------------------
+
+function adicionaSerie (){
+  adicionaSerie = document.createElement("<li>")
+
+}
+
+
+
