@@ -120,7 +120,7 @@ todasStrings(serie6)
 
 //----------------------------------------------
 
-//Função para buscar um objeto 
+// Função para buscar um objeto 
 
 // function encontraSerie (array, string){
 //   const buscaSerie = array.filter((elemento) => {
@@ -164,151 +164,44 @@ addSeries()
 }
 )
 
+
 //------------
-//Semana 6 - part 
+//Semana 6 - part 2
 
 
 function search (event){
   event.preventDefault()
-  // let pesquisarLista = document.getElementById('.main')
-  let input = document.getElementById('.buscar').value.toLocaleUpperCase()
-  for(let i=0;i<todasAsSeries.length;i++){
-  if(input === todasAsPraias[i].nome){
-      return (novaLista.innerHTML =`<div class="series">
+  // let listaBuscar = document.getElementsById('id-main')
+  let pegarNome = document.getElementById('buscar').value.toLocaleUpperCase()
+  document.getElementById('buscar').value = "";
+  for(let i=0;i<todasAsSeries.length; i++){
+  if(pegarNome === todasAsSeries[i].nome){
+      return (listaDeSeries.innerHTML = `<div class="series">
       <div class="series-div">
-      <img src = ${dados.imagem}>
-      <h2><b>${dados.nome}</b></h2>
+      <img src = ${todasAsSeries[i].imagem}>
+      <h2><b>${todasAsSeries[i].nome}</b></h2>
       <div class = "text">
-      <p><b>Gênero:</b> ${dados.genero} </p> 
-      <p><b>Ano:</b> ${dados.ano} </p>
-      <p><b>Temporadas:</b> ${dados.temporadas} </p>
-      <p><b>Em produção:</b> ${dados.producao}</p>
+      <p><b>Gênero:</b> ${todasAsSeries[i].genero} </p> 
+      <p><b>Ano:</b> ${todasAsSeries[i].ano} </p>
+      <p><b>Temporadas:</b> ${todasAsSeries[i].temporadas} </p>
+      <p><b>Em produção:</b> ${todasAsSeries[i].producao}</p>
           
       </div>
       </div>
-      </div>`)
+      </div>`
+     )
   
-  
-   }
-
+   } else if (pegarNome === '') {
+      alert("Digite um nome válido")
+      addSeries()
+   }  
   }
-
-  alert("Nenhuma praia foi encontrada, digite novamente!");
-  document.getElementById('id-type').value = "";
-  return;
+  alert("Série não encontrada, digite novamente!");
+  document.getElementById('buscar').value = "";
+  return  
 }
-
 
 search()
 
 
 
-// const inputSearch = document.querySelector("input [type = 'search']")
-// const conteudo = document.querySelector(".series")
-
-// inputSearch.oninput = () => {
-//   conteudo.innerHTML = "";
-
-//   todasAsSeries.filter((item) => 
-//   item.toLowerCase().includes(inputSearch.value.toLowerCase))
-//   .forEach((item) => addSeries (item))
-// }
-
-
-
-
-
-//addHTML = addSeries
-
-
-// function buscarSeries (array, nomeSerie) {
-//   const buscar = array.filter((obj) => obj.nomeSerie.toLowerCase().includes(nomeSerie.toLocaleUpperCase()))
-
-//   if (buscar.length){
-//     return buscar;
-//   } else {
-//     return array
-//   }
-// }
-
-//   function retornaVazio(){
-//     document.getElementById("buscar").value = "";
-//   }
-
- 
-//   function pesquisar (event) {
-//   event.preventDefault()
-//   const input = document.getElementById("buscar").value;
-//   const filtrar = buscarSeries.filter(todasAsSeries, input);
-
-//   if (input === ''){
-//     alert("Digite um nome.")
-//     addSeries(todasAsSeries)
-//   } else {
-//     console.log(filtrar);
-//     addSeries(input);
-//   }
-
-//   console.log(filtrar.includes(input));
-//   retornaVazio ();
-
-// }
-
-
-
-// function buscarSeries () {
-//   const input = document.getElementById("buscar").value.toLocaleUpperCase();
-//   const filtro = todasAsSeries.filter(serie => nome === input);
-//   const listSeries = document.querySelector(".series")
-
-//   for (let i = 0; i < addSeries.length; i++){
-//     if (filtro.length > 0){
-//       limpaLista();
-//       addSeries(filtro)
-//     } else {
-//       limpaLista();
-//       addSeries(todasAsSeries)
-//     }
-//     return (todasAsSeries[i])
-//   }
-// }
-
-// function limpaLista(){
-//   document.getElementById("buscar").value = ""
-// }
-
-
-
-// function buscarSerie (){
-//   const nome = document.getElementById("series")
-
-//   for (let i = o; i < nome.length; i++){
-
-//   }
-// }
-
-
-
-// function search (pesquisa) {
-//   return todasAsSeries.filter(todasAsSeries => {
-//     return todasAsSeries.nome.toLowerCase().includes(pesquisa.toLowerCase())
-//   })
-// }
-
-// buscar.addEventListener('keyup', debounce(buscarSeries, 400));
-
-
-// const input = document.querySelector("#buscar")
-
-// input.addEventListener("input", function () {
-//   const val = this.value;
-//   if(val) {
-//     filterVazio(val)
-//   } else {
-//     showItems()
-//   }
-// })
-
-// function showItems (){
-
-// }
