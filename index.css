@@ -23,24 +23,28 @@ header{
 }
 
 
-h1 {
+.retorna-menu {
     font-size: 3rem;
     font-family: 'Courier New', Courier, monospace;
     color:rgb(215, 207, 207);
     display: block;
+    text-decoration: none;
 }
 
-button{
-    border: 1px solid rgb(153, 149, 149);
+
+.search{
+    border: 2px solid rgb(153, 149, 149);
     border-radius: 4px;
-    margin-right: 4rem;
+    margin-right: 10px;
     box-shadow: 2px 20px 20px #000;
 }
 
-button:active{
+.search:active{
     background-color: rgb(120, 116, 116);
     color: white;
 }
+
+
 
 .main{
     background-color: rgba(0, 0, 0, 0.896);
@@ -62,10 +66,10 @@ button:active{
     padding: 10px;
     background-color: rgb(41, 38, 38);
     border: 1px solid black;
-    border-width: 2px;
     max-width: 100%;
-    max-height: 100%
+    max-height: 100%;
 }
+
 
 .text {
     font-size: 0.9rem;
@@ -99,4 +103,6 @@ footer {
     align-items: center;
 }
 
-
+a{
+    color:rgb(116, 123, 132);
+}

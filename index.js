@@ -203,5 +203,8 @@ function search (event){
 
 search()
 
-
+function returnMenu (event) {
+  window.history.back()
+}
+returnMenu()
 
