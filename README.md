@@ -8,10 +8,11 @@ Este projeto foi desenvolvido utilizando HTML, CSS e Javascript com manipulaçã
 
 *Projeto elaborado durante o Bootcamp Web Full Stack Labenu no módulo Introdução a Web.
 
-[Clique aqui para acessar o projeto]()
+[Clique aqui para acessar o projeto](https://chic-rolypoly-55c8f5.netlify.app)
 
 ## 📄 Descrição
-. Ao abrir a página, será carregado todas as séries armazenados em Objeto pelo JS. Você poderá fazer a busca do titulo desejado pelo nome, caso o titulo não exista, será exibido uma mensagem de erro. Caso você abra o Devtools, você conseguirá analisar as demais informações impressas dos titulos trabalhados dentro do Javascript.
+
+Ao abrir a página, será carregado todas as séries armazenados em Objeto pelo JS. Você poderá fazer a busca do titulo desejado pelo nome, caso o titulo não exista, será exibido uma mensagem de erro. Caso você abra o Devtools, você conseguirá analisar as demais informações impressas dos titulos trabalhados dentro do Javascript.
 
 ## ⚒️ Tecnologias 
 
